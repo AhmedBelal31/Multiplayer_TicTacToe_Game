@@ -10,8 +10,9 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
     return Container(
-      decoration: const BoxDecoration(
-        boxShadow:[
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(8.0),
+        boxShadow:const[
           BoxShadow(
             color: Colors.blue ,
             blurRadius: 5 ,
