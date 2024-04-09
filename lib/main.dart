@@ -21,6 +21,10 @@ class MyApp extends StatelessWidget {
         useMaterial3: false,
       ).copyWith(
         scaffoldBackgroundColor: bgcolor,
+        appBarTheme: AppBarTheme(
+          backgroundColor: bgcolor,
+          elevation: 0.0
+        )
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: MainMenuScreen.routeName,

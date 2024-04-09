@@ -11,16 +11,14 @@ class CustomButton extends StatelessWidget {
     final screenWidth = MediaQuery.sizeOf(context).width;
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8.0),
-        boxShadow:const[
-          BoxShadow(
-            color: Colors.blue ,
-            blurRadius: 5 ,
-            spreadRadius: 0,
-
-          )
-        ]
-      ),
+          borderRadius: BorderRadius.circular(8.0),
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.blue,
+              blurRadius: 5,
+              spreadRadius: 0,
+            )
+          ]),
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
@@ -32,9 +30,10 @@ class CustomButton extends StatelessWidget {
             50,
           ),
         ),
-        child: Text(text ,style: const TextStyle(
-          fontSize: 16
-        ),),
+        child: Text(
+          text,
+          style: const TextStyle(fontSize: 16),
+        ),
       ),
     );
   }
